@@ -5,8 +5,9 @@ import java.util.Collections;
 import java.util.List;
 
 import com.edutech.progressive.entity.Teacher;
+import com.edutech.progressive.service.TeacherService;
 
-public class TeacherServiceImplArraylist  {
+public class TeacherServiceImplArraylist implements TeacherService {
     private static List<Teacher> teacherList=new ArrayList<>();
     public List<Teacher> getAllTeachers(){
         return teacherList;
